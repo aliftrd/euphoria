@@ -13,7 +13,7 @@ export default function Home() {
                 </div>
                 <Card
                     description={
-                        <p className="text-center">This page under development</p>
+                        <p className="text-center pt-4">This page under development</p>
                     }
                 />
             </Layout>
