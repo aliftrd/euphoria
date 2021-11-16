@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Card from '../components/Card'
-import Footer from '../components/Footer'
+import { Layout, Card } from '../components'
+
 export default function Home() {
     const contacts = [
         {icon: <svg viewBox="0 0 128 128" className="w-8 h-8"><rect fill="#161E54" x="4.83" y="4.83" width="118.35" height="118.35" rx="6.53" ry="6.53"></rect><path fill="#fff" d="M86.48 123.17V77.34h15.38l2.3-17.86H86.48v-11.4c0-5.17 1.44-8.7 8.85-8.7h9.46v-16A126.56 126.56 0 0091 22.7c-13.62 0-23 8.3-23 23.61v13.17H52.62v17.86H68v45.83z"></path></svg> , name: 'Facebook', contact: 'https://facebook.com/alftri.dev'},
@@ -10,11 +10,10 @@ export default function Home() {
 
     return (
         <>
-        <Head>
-            <title>Euphoria - Home</title>
-        </Head>
-        <main className="my-0 mx-auto min-h-full">
-            <main id="home-page" className="relative flex flex-col">
+            <Head>
+                <title>Euphoria - Contact</title>
+            </Head>
+            <Layout>
                 <div className="text-center pt-8 pb-4">
                     <h1 className="text-navy font-bold text-2xl">CONTACT</h1>
                 </div>
@@ -31,9 +30,7 @@ export default function Home() {
                         </ul>         
                     }
                 />
-            </main>
-            <Footer />
-        </main>
+            </Layout>
         </>
     )
 }
