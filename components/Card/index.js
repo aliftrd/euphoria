@@ -1,6 +1,6 @@
-export default function Card({title, description}) {
+export default function Card({className, title, description}) {
     return (
-        <div className="container">
+        <div className={`container pt-3 ${className}`}>
             <div className="bg-white shadow-lg rounded-lg text-navy">
                 { title ? 
                     <div className="card-title">
@@ -8,7 +8,7 @@ export default function Card({title, description}) {
                     </div> : ''
                 }
                 <div className="card-body px-4 pb-4">
-                    <p className="leading-relaxed">{description}</p>
+                    {description}
                 </div>
             </div>
         </div>

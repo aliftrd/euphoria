@@ -3,8 +3,8 @@ import Footer from '../Footer'
 
 export default function Layout({ children }) {
     return (
-        <main className="my-0 mx-auto min-h-full">
-            <main className="relative flex flex-col">
+        <main className="mx-auto min-h-full">
+            <main className="bg-white dark:bg-navy flex flex-col">
                 {children}
             </main>
             <Footer />

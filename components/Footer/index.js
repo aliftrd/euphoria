@@ -3,7 +3,7 @@ import { withRouter } from 'next/router'
 
 function Footer({router}) {
     return (
-        <footer id="footer" className="bg-white">
+        <footer id="footer" className="bg-white z-50">
             <div className="flex flex-row justify-around p-3 bar-child">
                 <Link href="/">
                     <a className={ router.pathname == '/' ? 'active' : '' }>

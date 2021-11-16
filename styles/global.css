@@ -7,10 +7,23 @@
 body {
     background-color: #EFEFEF;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #EFEFEF;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #EFEFEF;    /* color of the scroll thumb */
 }
 
 main {
-    background-color: #fff;
     max-width: 480px;
     width: 100%;
     margin: 0px auto;

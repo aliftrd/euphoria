@@ -9,8 +9,8 @@ module.exports = {
                 padding: '1rem'
             },
             colors: {
-                navy: '#161E54',
-                egg: '#FAAD80',
+                "navy": '#161E54',
+                "egg": '#FAAD80',
             },
         },
     },
