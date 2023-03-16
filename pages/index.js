@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Layout, Card } from '../components'
 
 export default function Home() {
+    const imagePath = "https://avatars.githubusercontent.com/u/27538077?s=400&u=e6dc9000c2bb3314440787b1309cddc395a4feeb&v=4";
     const skills = [
         {
             icon: 'devicon-php-plain colored',
@@ -42,8 +43,8 @@ export default function Home() {
             <Layout>
                 <div className="flex flex-col items-center">
                     <div className="relative mt-10">
-                        <img alt="Gambar boz" src="/images/profile.jpg" className="absolute top-2 left-2 w-32 h-32 rounded-full z-10" />
-                        <img alt="Gambar boz" src="/images/profile.jpg" className="w-36 h-36 rounded-full filter blur-lg z-0" />
+                        <img alt="Gambar boz" src={imagePath} className="absolute top-2 left-2 w-32 h-32 rounded-full z-10" />
+                        <img alt="Gambar boz" src={imagePath} className="w-36 h-36 rounded-full filter blur-lg z-0" />
                     </div>
                     <div className="text-center p-4">
                         <h1 className="text-navy font-bold text-2xl">ALIF TRIADI</h1>
